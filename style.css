@@ -1,0 +1,34 @@
+/* Background Image */
+html, body {
+    background-image: url("images/blueandblack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Navbar */
+.custom-border {
+    border-bottom: 3px solid black;
+}
+
+.custom-background {
+    background-color: black;
+    padding: 10px;
+}
+
+.section {
+    background-color: lightskyblue;
+}
+
+hr {
+    color: 3px solid black;
+}
+
+/* Footer styling */
+.text-white {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.custom-footerborder {
+    border-top: 3px solid black;
+}
