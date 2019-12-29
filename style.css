@@ -6,6 +6,11 @@ html, body {
     background-attachment: fixed;
 }
 
+.container\mt-5\mb-5 {
+    float: center;
+    background-color: lightgray;
+}
+
 /* Navbar */
 .custom-border {
     border-bottom: 3px solid black;
@@ -16,12 +21,27 @@ html, body {
     padding: 10px;
 }
 
+h2 {
+    border-bottom: 1px solid lightgray;
+}
+
 .section {
     background-color: lightskyblue;
+    width: 50px;
 }
 
 hr {
     color: 3px solid black;
+}
+
+
+.col-xs-12\col-sm-12 {
+    margin: auto;
+}
+
+.btn {
+    text-align: center;
+    float: center;
 }
 
 /* Footer styling */
