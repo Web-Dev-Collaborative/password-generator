@@ -1,34 +1,78 @@
-// Generator functions - https://www.net-comber.com/charset.html
-// get random lowercase letters
-functions getRandomLower() {
-    return String.fromCharCode (Math.floor(Math.random() * 26) + 97);
-}
-functions getRandomUpper() {
-    return String.fromCharCode (Math.floor(Math.random() * 26) + 65);
-}
-functions getRandomNumber() {
-    return String.fromCharCode (Math.floor(Math.random() * 10) + 48);
-}
-functions getRandomSymbol() {
-    return String.fromCharCode (Math.floor(Math.random() * 10) + 48);
-}
 
-console.log(getRandomLower());
-console.log(getRandomUpper());
-console.log(getRandomNumber());
-console.log(getRandomSymbol());
+// Variables for end user selections
+var option1 = document.querySelector("#uppercase");
+var option2 = document.querySelector("#lowercase");
+var option3 = document.querySelector("numbers");
+var option4 = document.querySelector("symbols");
 
-console.log(Math.floor(Math.random() * 26) + 97);
+// Make an array for all the possible characters used to make up the password
+let alphabet = "abcdefghijklmnopqrstuvyxz"
+let numbers = "0123456789"
+let symbols = "~`!@#$%^&*()_-+=?"
 
-
-let alphabet = a...z
-
+// This indicates what to do with number strings and splitting into an array
 let lowerCase = alphabet.split();
-console.log(lowerCase)
+console.log(lowerCase);
+let upperCase = alphabet.toUpperCase().split("");
+console.log(upperCase);
+let numberOptions = numbers.split();
+console.log(numberOptions);
+let symbolOptions = symbols.split();
+console.log(symbolOptions);
 
-let randomIndex = Math.floor(Math.random() * 26)  // random number from 0 to 25
+let userInput = prompt("enter password length")  // Returns a string
 
-let userInput = prompt("enter password length")  // returns a string
+// Console.log all items to ensure they are working
+console.log("#uppercase", option1);
+console.log("#lowercase", option2);
+console.log("#numbers", option3);
+console.log("#symbol", option4);
 
-for(userInput < 8)
-alert("Your password is too short")
+console.log(lowerCase);
+console.log(upperCase);
+console.log(numbers);
+console.log(symbols);
+
+console.log(Math.floor(Math.random() * 26));
+console.log(Math.floor(Math.random() * 10));
+console.log(Math.floor(Math.random() * 17));
+
+// Random number from 0 to 25
+let randomIndex = Math.floor(Math.random() * 26);
+
+function generatepassword(userInput, character, length) {
+    for(let i=0; i <userInput; i++);
+        var randomLetter = character[Math.floor(Math.random()*length)]
+}
+// If conditions
+if (userInput < 8) {
+    alert("Your password is too short")
+}
+
+else if (userInput > 128) {
+    alert("Your password is too long")
+}
+
+if (option1.checked === true) {
+    console.log("Working");
+}
+if (option2.checked === true) {
+    console.log("Working");
+}
+if (option3.checked === true) {
+    console.log("Working");
+}
+if (option4.checked === true) {
+    console.log("Working");
+}
+
+let wordbank = [];
+
+//Arrays I made
+wordbank.push(){
+    console.log(wordbank);
+}
+
+
+
+// Create a for loop to select 10 characters from the array
